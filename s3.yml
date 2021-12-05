@@ -1,0 +1,11 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  StagingBucket:
+    Type: AWS::S3::Bucket
+    Properties: 
+      BucketName: s3-cdk-economist
+Outputs:
+  BucketName:
+    Value: !Ref StagingBucket
+  BucketDomainName:
+    Value: !GetAtt StagingBucket.RegionalDomainName
