@@ -1,4 +1,4 @@
 node_modules
 cdk.out
 package-lock.json
-../package-lock.json
+infra/package-lock.json
