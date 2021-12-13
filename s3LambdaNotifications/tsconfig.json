@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
+    "noImplicitAny": false,
     "target": "ES2018",
     "module": "commonjs",
-    "lib": [
-      "es2018"
-    ],
+    "lib": ["es2018", "ESNext.AsyncIterable"],
+    "allowJs": true,
+    "checkJs": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
     "declaration": true,
     "strict": true,
-    "noImplicitAny": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
@@ -15,16 +17,18 @@
     "noUnusedParameters": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "inlineSourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "inlineSources": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "typeRoots": [
       "./node_modules/@types"
-    ]
+    ],
+    "isolatedModules": true
   },
-  "exclude": [
-    "node_modules",
-    "cdk.out"
-  ]
+  "exclude": ["node_modules", "**/node_modules/*", "cdk.out"]
 }
