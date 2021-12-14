@@ -12,7 +12,7 @@ export class S3LambdaNotificationsStack extends Stack {
       timeout: Duration.seconds(5),
       runtime: aws_lambda.Runtime.NODEJS_14_X,
       handler: 'main',
-      entry: path.join(__dirname, `/../src/my-lambda/index.ts`),
+      entry: path.join(__dirname, `/../src/my-lambda/`),
       bundling: {
         minify: true,
         externalModules: ['aws-sdk'],
