@@ -1,18 +1,37 @@
-// import { Template } from '@aws-cdk/assertions';
-// import * as cdk from '@aws-cdk/core';
-// import * as Test2 from '../lib/test2-stack';
+import { Template } from 'aws-cdk-lib/assertions';
+import {App, Stack, aws_lambda} from "aws-cdk-lib";
+import lambda = require('../lib/s3_lambda_notifications-stack');
+// import { SynthUtils } from '@aws-cdk/assert';
+// import'@aws-cdk/assert/jest'
 
-// example test. To run these tests, uncomment this file along with the
-// example resource in lib/test2-stack.ts
-test('SQS Queue Created', () => {
-  //   const app = new cdk.App();
-  //     // WHEN
-  //   const stack = new Test2.Test2Stack(app, 'MyTestStack');
-  //     // THEN
-  //   const template = Template.fromStack(stack);
+// enhanced way
+test('lambda_resource', () => {
+
+  const app = new App();
+
+  const s3LambdaTriggerStack  = new Stack(app, "S3LambdaTrigger")
+
+  const lambda_resource  = new lambda.S3LambdaNotificationsStack(s3LambdaTriggerStack, 'Lambda');
+
+  const template = Template.fromStack(lambda_resource)
+
+  // using build in cdk library to test
+  template.hasResource('AWS::Lambda::Function', {});
+
+// using external library to test
+  // expect(lambda_resource).toHaveResource('AWS::Lambda::Function', {
+  //   MemorySize: 1024
+  // })
+
+});
   
-  //   template.hasResourceProperties('AWS::SQS::Queue', {
-  //     VisibilityTimeout: 300
-  //   });
-  });
-  
+// succint way
+// test('lambda_resource', () => {
+
+//   const stack = new Stack();
+//   const lambda_resource  = new lambda.S3LambdaNotificationsStack(stack, 'Lambda');
+
+//   expect(lambda_resource).toHaveResource('AWS::Lambda::Function', {
+//     MemorySize: 1024
+//   })
+// });

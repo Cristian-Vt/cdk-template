@@ -1,6 +1,10 @@
-import { Stack, StackProps, RemovalPolicy, CfnOutput, aws_s3, aws_s3_notifications, Duration, aws_lambda_nodejs, aws_lambda } from 'aws-cdk-lib';
+import { Stack, StackProps, RemovalPolicy, aws_s3, aws_s3_notifications, Duration, aws_lambda_nodejs, aws_lambda, CfnOutput } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
 import * as path from 'path';
+
+export interface ProcessorStackProps extends StackProps {
+  readonly triggers: aws_s3.EventType.OBJECT_CREATED_PUT;
+}
 
 export class S3LambdaNotificationsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -27,7 +31,7 @@ export class S3LambdaNotificationsStack extends Stack {
 
     // invoke lambda every time an object is created in the bucket
     s3Bucket.addEventNotification(
-      aws_s3.EventType.OBJECT_CREATED,
+      aws_s3.EventType.OBJECT_CREATED_PUT,
       new aws_s3_notifications.LambdaDestination(lambdaFunction),
       // {prefix: 'test/', suffix: '.yaml'},
     );

@@ -30,5 +30,7 @@
     ],
     "isolatedModules": true
   },
-  "exclude": ["node_modules", "**/node_modules/*", "cdk.out"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/node_modules/*", "cdk.out", "./built/**/*", "./plugins/**/*",
+    "./typings/**/*", "dist"]
 }
