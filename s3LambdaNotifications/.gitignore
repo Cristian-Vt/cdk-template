@@ -2,7 +2,7 @@
 *.d.ts
 node_modules
 .history
-
+__snapshots__
 # CDK asset staging directory
 .cdk.staging
 cdk.out
