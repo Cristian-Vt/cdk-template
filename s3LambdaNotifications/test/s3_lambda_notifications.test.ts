@@ -23,6 +23,13 @@ test('lambda_resource', () => {
   //   MemorySize: 1024
   // })
 
+// one liner
+    // Template.fromStack(
+  //   new lambda.S3LambdaNotificationsStack(
+  //     new Stack(
+  //       app), 'Lambda'))
+  //       .hasResource('AWS::Lambda::Function', {})
+
 });
   
 // succint way
