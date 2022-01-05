@@ -30,7 +30,7 @@ export class LambdaSnsSqsDlq extends cdk.Stack {
 
     // queue resource
     const queue = new sqs.Queue(this, 'sqs-queue', {
-      // set up DLQ
+      // 👇 set up DLQ
       deadLetterQueue: {
         queue: dlq,
         maxReceiveCount: 1,
