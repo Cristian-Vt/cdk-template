@@ -1,0 +1,719 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "lambda-sns-sqs-dlq": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://200422256149/eu-west-1",
+      "properties": {
+        "templateFile": "lambda-sns-sqs-dlq.template.json"
+      },
+      "metadata": {
+        "/lambda-sns-sqs-dlq": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.fef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065",
+              "id": "fef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065",
+              "packaging": "zip",
+              "sourceHash": "fef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065",
+              "s3BucketParameter": "AssetParametersfef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065S3Bucket57BBBE3D",
+              "s3KeyParameter": "AssetParametersfef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065S3VersionKeyF75BDD4F",
+              "artifactHashParameter": "AssetParametersfef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065ArtifactHashB7D41A66"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/construct-compat.ts:437:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "LambdaSnsSqsDlq.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:15:23)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          },
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effed",
+              "id": "975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effed",
+              "packaging": "zip",
+              "sourceHash": "975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effed",
+              "s3BucketParameter": "AssetParameters975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effedS3Bucket7EC59D1F",
+              "s3KeyParameter": "AssetParameters975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effedS3VersionKeyD5FBDFD4",
+              "artifactHashParameter": "AssetParameters975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effedArtifactHash467B6B05"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/construct-compat.ts:437:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:171:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "LambdaSnsSqsDlq.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:47:22)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/dlq-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dlqlambdaServiceRole18778F80",
+            "trace": [
+              "new Role (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:563:31)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:15:23)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/dlq-lambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dlqlambdaServiceRoleDefaultPolicyB5448532",
+            "trace": [
+              "new Policy (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/role.ts:367:28)",
+              "Function.addToPrincipal (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Queue.grant (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sqs/lib/queue-base.ts:241:22)",
+              "Queue.grantConsumeMessages (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sqs/lib/queue-base.ts:177:22)",
+              "SqsEventSource.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-event-sources/lib/sqs.ts:68:16)",
+              "NodejsFunction.addEventSource (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:29:15)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/dlq-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dlqlambdaC969EFA6",
+            "trace": [
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:625:35)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:15:23)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/dlq-lambda/SqsEventSource:lambdasnssqsdlqdeadletterqueue2B46B3AD/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "dlqlambdaSqsEventSourcelambdasnssqsdlqdeadletterqueue2B46B3ADD5E10752",
+            "trace": [
+              "new EventSourceMapping (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/event-source-mapping.ts:301:35)",
+              "NodejsFunction.addEventSourceMapping (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:296:12)",
+              "SqsEventSource.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-event-sources/lib/sqs.ts:60:39)",
+              "NodejsFunction.addEventSource (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:29:15)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/AssetParameters/fef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065S3Bucket57BBBE3D",
+            "trace": [
+              "new FileAssetParameters (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "LambdaSnsSqsDlq.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:15:23)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/AssetParameters/fef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065S3VersionKeyF75BDD4F",
+            "trace": [
+              "new FileAssetParameters (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "LambdaSnsSqsDlq.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:15:23)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/AssetParameters/fef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersfef777fb289ca6284bdf943b78d108de2f963e8f3659a4b2375c984288a2b065ArtifactHashB7D41A66",
+            "trace": [
+              "new FileAssetParameters (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "LambdaSnsSqsDlq.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:15:23)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/AssetParameters/975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effed/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effedS3Bucket7EC59D1F",
+            "trace": [
+              "new FileAssetParameters (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "LambdaSnsSqsDlq.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:47:22)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/AssetParameters/975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effed/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effedS3VersionKeyD5FBDFD4",
+            "trace": [
+              "new FileAssetParameters (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "LambdaSnsSqsDlq.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:47:22)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/AssetParameters/975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effed/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters975339bbed2aef375dabb9c429bd8170531afe2cac7e1e8be1d36161a18effedArtifactHash467B6B05",
+            "trace": [
+              "new FileAssetParameters (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:154:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:74:19)",
+              "LambdaSnsSqsDlq.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack.ts:663:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:78:25)",
+              "new Asset (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:145:40)",
+              "AssetCode.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/code.ts:277:20)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:583:29)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:47:22)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/dead-letter-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "deadletterqueueD1EEB012",
+            "trace": [
+              "new Queue (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sqs/lib/queue.ts:277:19)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:24:17)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/sqs-queue/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sqsqueueE70CFDBB",
+            "trace": [
+              "new Queue (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sqs/lib/queue.ts:277:19)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:32:19)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/sqs-queue/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sqsqueuePolicyC27BD6E4",
+            "trace": [
+              "new QueuePolicy (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sqs/lib/policy.ts:29:5)",
+              "Queue.addToResourcePolicy (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sqs/lib/queue-base.ts:146:21)",
+              "SqsSubscription.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sns-subscriptions/lib/sqs.ts:44:16)",
+              "Topic.addSubscription (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sns/lib/topic-base.ts:70:45)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:44:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/sqs-queue/lambdasnssqsdlqsnstopicCA3657B1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "sqsqueuelambdasnssqsdlqsnstopicCA3657B120648056",
+            "trace": [
+              "new Subscription (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sns/lib/subscription.ts:108:5)",
+              "Topic.addSubscription (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sns/lib/topic-base.ts:84:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:44:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/sns-topic/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "snstopic2C4AE3C1",
+            "trace": [
+              "new Topic (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sns/lib/topic.ts:100:22)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:41:22)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/my-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mylambdaServiceRoleEF0A78B7",
+            "trace": [
+              "new Role (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:563:31)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:47:22)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/my-lambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mylambdaServiceRoleDefaultPolicyBDADF1CE",
+            "trace": [
+              "new Policy (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/role.ts:367:28)",
+              "Function.addToPrincipal (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Queue.grant (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sqs/lib/queue-base.ts:241:22)",
+              "Queue.grantConsumeMessages (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-sqs/lib/queue-base.ts:177:22)",
+              "SqsEventSource.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-event-sources/lib/sqs.ts:68:16)",
+              "NodejsFunction.addEventSource (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:56:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/my-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mylambdaE03B2284",
+            "trace": [
+              "new Function (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function.ts:625:35)",
+              "new NodejsFunction (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-nodejs/lib/function.ts:113:5)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:47:22)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/my-lambda/SqsEventSource:lambdasnssqsdlqsqsqueueC07A1CBD/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mylambdaSqsEventSourcelambdasnssqsdlqsqsqueueC07A1CBDB7E507D8",
+            "trace": [
+              "new EventSourceMapping (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/event-source-mapping.ts:301:35)",
+              "NodejsFunction.addEventSourceMapping (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:296:12)",
+              "SqsEventSource.bind (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda-event-sources/lib/sqs.ts:60:39)",
+              "NodejsFunction.addEventSource (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:344:12)",
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:56:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/snsTopicArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "snsTopicArn",
+            "trace": [
+              "new LambdaSnsSqsDlq (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/lib/lambda-dlq-sns-sqs-resource.ts:62:5)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Module.m._compile (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "main (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1101:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/lambda-sns-sqs-dlq/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/synthesis.ts:201:5)",
+              "visit (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/synthesis.ts:197:5)",
+              "injectMetadataResources (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (node:events:510:26)",
+              "process.emit (node:events:390:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/Users/cv/w/33/cdk/s3LambdaNotifications/cdk/sqs-sns-lambda-dlq/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
